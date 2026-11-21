@@ -1,0 +1,174 @@
+td img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Memotong gambar secara proporsional agar tidak gepeng */
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #222;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* --- Tombol Navigasi & Aksi --- */
+.btn-tambah {
+    display: inline-block;
+    padding: 9px 16px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: background-color 0.2s;
+}
+
+.btn-tambah:hover {
+    background-color: #218838;
+}
+
+.btn-ubah, .btn-hapus {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+.btn-ubah {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.btn-ubah:hover {
+    background-color: #e0a800;
+}
+
+.btn-hapus {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-hapus:hover {
+    background-color: #c82333;
+}
+
+/* --- Tabel Data Barang (index.php) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #eef3f8;
+}
+
+td img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* --- Form Input (tambah.php & ubah.php) --- */
+.input {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input label {
+    width: 140px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+.input input[type="text"],
+.input select,
+.input input[type="file"] {
+    flex: 1;
+    max-width: 350px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input input[type="text"]:focus,
+.input select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit {
+    margin-top: 20px;
+    padding-left: 140px;
+}
+
+.submit input[type="submit"] {
+    padding: 9px 22px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #0056b3;
+}
